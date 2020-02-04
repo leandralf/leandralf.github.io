@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head><meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Leandra Fernandes - Personal Trainer</title>
+	<meta name="author" content="Leandra Fernandes" />
+	<meta name="description" content="Leandra Fernandes - Personal Trainer">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://leandrafernandes.com.br/" />
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="icon" href="/assets/img/lf.svg" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap" rel="stylesheet"> 
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    line-height:1.15;
+    -webkit-text-size-adjust:100%
+}
+body {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	margin: 5em 0;
+}
+h1 {
+	font-family: 'Crimson Text', serif;
+	font-size: 4em;
+    font-weight: normal;
+	margin: .4em 0;
+}
+p {
+	letter-spacing: 1px;
+}
+.leandra_img {
+  display:block;
+  max-width:130px;
+  max-height:130px;
+  margin:0 auto 30px;
+  border-radius:50%;
+  background-color:#f8f8f8;
+  transition:opacity 100ms ease
+}
+.leandra_img:hover {
+  opacity:0.9
+}
+.nav {
+	margin: 5em 0;
+	text-transform: uppercase;
+}
+.nav a {
+	color: #333;
+	margin: 0.2em 1em;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #6b69fa;
+}
+.speaker-form {
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto 5em auto;
+}
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 15px;
+}
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #6b69fa;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #b6b6fc;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+@media only screen and (min-width: 700px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+
+  .form-row textarea ,
+  .form-row input[type='text'],
+  .form-row input[type='email'] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
+}
+</style> 
+</head>
+<body>
+	<img class="leandra_img" src="leandra-bw.jpeg" />
+	<h1>Leandra Fernandes</h1>
+	<p>Bacharel em <strong>Educação Físisa</strong> e <strong>Administração de Empresas</strong></p>
+	<p class="nav">
+		<a href="javascript:void(0);" onclick="contact();">Contato</a>
+		<a href="https://www.instagram.com/leandralf" target="_blank" title="instagram.com/leandralf">Instagram</a>
+	</p>
+	<div id="contact" style="display:none">
+		<form class="speaker-form" accept-charset="UTF-8" action="https://formsubmit.io/send/37035c12-f1c0-42a1-810b-a824248c73c3" method="POST">
+			<input type="hidden" name="page" value="contato site">
+			<input name="_redirect" type="hidden" value="https://www.leandrafernandes.com.br">
+			<input name="_formsubmit_id" type="text" style="display:none">
+			<div class="form-row">
+				<label for="full-name">Nome</label>
+				<input id="full-name" name="full-name" type="text" maxlength="100"/>
+			</div>
+			<div class="form-row">
+				<label for="phone">Telefone</label>
+				<input id="phone" name="phone" type="text" maxlength="20" />
+			</div>
+			<div class="form-row">
+				<label for="email">E-mail</label>
+				<input id="email" name="email" type="email" maxlength="250" />
+			</div>
+			<div class="form-row">
+				<label for="abstract">Mensagem</label>
+				<textarea id="abstract" name="abstract" maxlength="400"></textarea>
+			</div>
+			<div class="form-row">
+				<button>Enviar</button>
+			</div>
+		</form>
+	</div>
+<script>
+function contact() {
+	var element = document.getElementById("contact");
+	if (element.style.display === "block") {
+		element.style.display = "none";
+	} else {
+		element.style.display = "block";
+	}
+} 
+</script>
+</body>
+</html>
