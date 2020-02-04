@@ -168,7 +168,7 @@ p {
 	<div id="contact" style="display:none">
 		<form class="speaker-form" accept-charset="UTF-8" action="https://formsubmit.io/send/37035c12-f1c0-42a1-810b-a824248c73c3" method="POST">
 			<input type="hidden" name="page" value="contato site">
-			<input name="_redirect" type="hidden" value="https://leandrafernandes.com.br">
+			<input name="_redirect" type="hidden" value="https://leandrafernandes.com.br#mensagem-enviada">
 			<input name="_formsubmit_id" type="text" style="display:none">
 			<div class="form-row">
 				<label for="full-name">Nome</label>
@@ -191,15 +191,33 @@ p {
 			</div>
 		</form>
 	</div>
+	<div id="message-sent" style="display:none">
+		Sua mensagem foi enviada com sucesso!
+	</div>
 <script>
 function contact() {
+	hideMessage();
 	var element = document.getElementById("contact");
 	if (element.style.display === "block") {
 		element.style.display = "none";
 	} else {
 		element.style.display = "block";
 	}
-} 
+}
+
+function messageSent() {
+	l = window.location.href;
+	if (l.indexOf("#mensagem-enviada") !== -1) {
+		var element = document.getElementById('message-sent');
+		element.style.display = "block";
+	}
+}
+function hideMessage() {
+	var element = document.getElementById('message-sent');
+	element.style.display = "none";
+}
+
+messageSent();
 </script>
 </body>
 </html>
