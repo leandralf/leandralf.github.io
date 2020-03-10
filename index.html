@@ -10,6 +10,7 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157765045-1"></script>
@@ -46,8 +47,23 @@ h1 {
     font-weight: normal;
 	margin: .4em 0;
 }
+h2 {
+	margin: .4em 0;
+}
 p {
 	letter-spacing: 1px;
+}
+div#about {
+	margin: 3em auto;
+	text-align: left;
+	width: 450px;
+}
+div#about ul {
+list-style: none;
+	margin:1em 1em 2em 2em;
+}
+div#about ul li {
+	line-height:2em;
 }
 .leandra_img {
   display:block;
@@ -173,6 +189,7 @@ p {
 	<h1>Leandra Fernandes</h1>
 	<p>Bacharel em <strong>Educação Física</strong> e <strong>Administração de Empresas</strong></p>
 	<p class="nav">
+		<a href="javascript:void(0);" onclick="about();">Sobre</a>
 		<a href="javascript:void(0);" onclick="contact();">Contato</a>
 		<a href="https://www.instagram.com/leandralf" target="_blank" title="instagram.com/leandralf">Instagram</a>
 	</p>
@@ -205,14 +222,41 @@ p {
 	<div id="message-sent" style="display:none">
 		Sua mensagem foi enviada com sucesso!
 	</div>
+	<div id="about" style="display:none">
+		<ul>
+			<li><i class="fas fa-graduation-cap"></i> <strong>Educação Física<strong></li>
+			<li><i class="fas fa-graduation-cap"></i> <strong>Administração de Empresas<strong></li>
+		</ul>
+		<ul>
+			<li><i class="fas fa-certificate"></i> Crossfit L1 Trainer</li>
+			<li><i class="fas fa-certificate"></i> CrossFit Judges Course</li>
+			<li><i class="fas fa-certificate"></i> Core 360º Fase 1 e 2</li>
+			<li><i class="fas fa-certificate"></i> Core 360º Fase 3 e 4</li>
+			<li><i class="fas fa-certificate"></i> Dragos - Treinamento em Levantamento de Peso "Nível I"</li>
+		</ul>
+	</div>
 <script>
-function contact() {
+function show(id) {
 	hideMessage();
-	var element = document.getElementById("contact");
-	if (element.style.display === "block") {
-		element.style.display = "none";
-	} else {
-		element.style.display = "block";
+	hide(element);
+	var element = document.getElementById(id);
+	element.style.display = "block";
+}
+function about() {
+	show("about");
+}
+function contact() {
+	show("contact");
+}
+function hide() {
+	var boxes = ["about", "contact"];
+	for (var b in boxes) {
+
+		console.log(boxes[b]);
+		var element = document.getElementById(boxes[b]);
+		if (element.style.display === "block") {
+			element.style.display = "none";
+		}
 	}
 }
 
