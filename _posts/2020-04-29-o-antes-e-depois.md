@@ -1,10 +1,11 @@
 ---
 layout: post
-title: O antes e o Depois
+title: O Antes e o Depois
 category: Dica da Lê
 ---
 
 Vai muito além do físico, é sobre mudar vidas.
+
 O "antes e depois" é a prova de que quando queremos, podemos mudar e conquistar uma vida saudável.
 
 Aí você me pergunta...
