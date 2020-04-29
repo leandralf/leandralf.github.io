@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<main class="posts">
+	<hr>
+	<h2> {{page.title}} </h2>
+
+	{% if page.image %}
+	<img src="/assets/img/posts/{{ page.image }}">
+	{% endif %}
+
+    {{ content }}
+	<p class="author">
+	{% if page.author %}{{ page.author }}{% else %}LF{% endif %}
+	</p>
+
+	<h3 class="related">Veja também:</h3>
+	<ul class="posts">
+{% for post in site.posts %}
+{% if post.url != page.url %}
+		<li>
+<a href="{{ post.url }}">{{ post.title }}</a>
+{{ post.excerpt }}
+		</li>
+{% endif %}
+{% endfor %}
+	</ul>
+</main>
+

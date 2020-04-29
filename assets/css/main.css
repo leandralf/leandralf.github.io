@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    line-height:1.15;
+    -webkit-text-size-adjust:100%
+}
+body {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	margin: 5em 0;
+}
+h1 {
+	font-family: 'Crimson Text', serif;
+	font-size: 4em;
+  font-weight: normal;
+	margin: .4em 0;
+}
+h2 {
+	margin: .4em 0;
+}
+p {
+	letter-spacing: 1px;
+}
+
+div#about {
+	margin: 4em auto;
+	text-align: left;
+	width: 90%;
+}
+div#about div {
+	clear: both;
+	margin: 4em 0;
+}
+div#about div::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div#about ul {
+	list-style: none;
+	margin: 0 0 0 1.62em;
+}
+div#about ul li {
+	line-height:2em;
+}
+div#about ul li:before {
+  content: " ";
+}
+div#about svg {
+	width: 24px;
+	padding:3px;
+}
+div#about svg.grad {
+	padding:0px;
+}
+
+main.posts {
+	margin: 4em auto;
+	text-align: justify;
+	width: 90%;
+  line-height: 1.4rem;
+}
+main.posts blockquote{
+  font-style: italic;
+  margin: 1em 2em;
+}
+main.posts img {
+  width: 90%;
+}
+main.posts p {
+  margin: 0.5rem 0;
+}
+main.posts ul {
+  list-style-position: inside;
+  margin: 1em;
+}
+main.posts h2 {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+  font-weight: normal;
+	margin: 1.6em 0 1em;
+}
+main.posts hr {
+  border: 0;
+  color: #ddd;
+  background-image: linear-gradient(to right, transparent, #eee, transparent);  
+  height: 1px;
+  overflow: visible;
+  padding: 0;
+  text-align: center;
+}
+main.posts ul.posts {
+	list-style: none;
+  margin: 0;
+}
+main.posts ul.posts li {
+  margin: 1em;
+}
+main.posts ul.posts li p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  margin: 0;
+}
+main.posts ul.posts a {
+	color: #333;
+  font-weight: bold;
+	text-decoration: none;
+}
+main.posts ul.posts a:hover {
+	color: #6b69fa;
+}
+.related {
+  margin: 4em 0 0;
+}
+
+.author {
+  font-weight: bold;
+  padding: 1em 0;
+  text-align: center;
+}
+.categories {
+  font-weight: bold;
+  padding: 0.4em 0 1em 1em;
+}
+
+.leandra_img {
+  display:block;
+  max-width:130px;
+  max-height:130px;
+  margin:0 auto 30px;
+  border-radius:50%;
+  background-color:#f8f8f8;
+  transition:opacity 100ms ease
+}
+.leandra_img:hover {
+  opacity:0.9
+}
+.nav {
+	font-size: 11px;
+	margin: 5em 0;
+	text-transform: uppercase;
+}
+.nav a {
+	color: #333;
+	margin: 0.2em 1em;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #6b69fa;
+}
+.speaker-form {
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto 5em auto;
+}
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 15px;
+}
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #6b69fa;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #b6b6fc;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+@media only screen and (min-width: 700px) {
+  div#about {
+    width: 450px;
+  }
+  div#about ul {
+    float: left;
+  }
+  div#about svg {
+    float: left;
+  }
+
+  main.posts {
+    width: 650px;
+  }
+  main.posts img {
+    width: 650px;
+  }
+
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+
+  .form-row textarea ,
+  .form-row input[type='text'],
+  .form-row input[type='email'] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Leandra Fernandes - Profissional de Educação Física</title>
+	<meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Leandra Fernandes{% endif %}" />
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://leandrafernandes.com.br/" />
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="/assets/css/main.css?{{site.time | date: '%s%N'}}">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157765045-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157765045-1');
+</script>
+</head>
+<body>
+{%- include header.html -%}
+{{ content }}
+{%- include footer.html -%}
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
