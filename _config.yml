@@ -11,8 +11,19 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
 permalink: /blog/:title/
+
+paginate_path: '/blog/:num/'
+pagination:
+  enabled: true
+  per_page: 12
+  permalink: '/:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 
 include: ['_pages']
 

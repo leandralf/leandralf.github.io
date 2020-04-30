@@ -120,12 +120,36 @@ main.posts ul.posts a:hover {
 .related {
   margin: 4em 0 0;
 }
+nav.paginate {
+  padding: 2em;
+  text-align: center;
+}
+nav.paginate a, nav.paginate span {
+	color: #333;
+  font-weight: bold;
+  padding: 0.4em 0.6em;
+	text-decoration: none;
+}
+nav.paginate span {
+  background: #f0f0fa;
+}
+nav.paginate a:hover {
+	color: #6b69fa;
+}
+nav.paginate a.arrow {
+  font-size: 1.4em;
+}
 
 .author {
   font-weight: bold;
   padding: 1em 0;
   text-align: center;
 }
+.author time {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
 .categories {
   font-weight: bold;
   padding: 0.4em 0 1em 1em;
